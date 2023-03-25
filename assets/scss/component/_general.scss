@@ -1,0 +1,41 @@
+.c-header{
+	&__title{
+		font-weight: 800;
+		font-size: 50px;
+		line-height: 1.24;
+		color: #123573;
+	}
+	&__sub{
+		margin-bottom: 12px;
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 1.27;
+		letter-spacing: 0.095em;
+		color: #123573;
+		opacity: 0.5;
+		&.-has-icon{
+			display: flex;
+			align-items: center;
+			&::before{
+				content: '';
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-right: 12px;
+				background-image: url(../images/favicon.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+}
+
+
+.icon-drone{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/icon-drone.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}

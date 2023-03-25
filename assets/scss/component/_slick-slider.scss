@@ -1,0 +1,48 @@
+.slick-slide > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.slick-style {
+  --bs-gutter-x: 24px;
+  overflow: hidden;
+
+  .slick-list {
+    margin: 0 calc(var(--bs-gutter-x) * -1);
+  }
+  .slick-slide {
+    margin: 0 var(--bs-gutter-x);
+  }
+  @media only screen and (max-width: 1399px) {
+      --bs-gutter-x: 12px;
+  }
+  @media only screen and (max-width: 1199px) {
+      --bs-gutter-x: 8px;
+  }
+}
+.slick-dots{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	button{
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: #003677;
+		opacity: 0.2;
+		border: 0;
+		font-size: 0;
+		padding: 0;
+	    margin: 0;
+	    color: transparent;
+	    transition: .3s;
+	}
+	.slick-active button{
+		opacity: 1;
+	}
+}

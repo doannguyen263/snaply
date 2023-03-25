@@ -1,0 +1,122 @@
+// Effect zoomin
+.effect-zoomin {
+  &__target {
+    transform: scale(1);
+    overflow: hidden;
+
+    img {
+      transition: 0.3s;
+    }
+  }
+  &:hover {
+    .effect-zoomin__target img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Effect shine
+.effect-shine {
+  &__target {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      );
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+      pointer-events: none;
+    }
+  }
+
+  &:hover &__target::before {
+    -webkit-animation: shine 1s;
+    animation: shine 1s;
+  }
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+// Effect shine
+.effect-brightness {
+  &__target {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    .effect--brightness__target {
+      -webkit-filter: brightness(1.1);
+    }
+  }
+}
+
+// brightness
+.brightness {
+  animation-name: brightness;
+}
+
+.animation-brightness-infinite-1s {
+  animation: brightness 1s infinite;
+}
+.animation-brightness-infinite-2s {
+  animation: brightness 2s infinite;
+}
+
+.animation-brightness {
+  &:hover {
+    .animation-brightness__target {
+      animation: brightness 3s infinite;
+    }
+  }
+}
+
+@-webkit-keyframes brightness {
+  0%,
+  100% {
+    -webkit-filter: brightness(1);
+  }
+
+  50% {
+    -webkit-filter: brightness(1.3);
+  }
+}
+
+@-webkit-keyframes scaleBanner {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

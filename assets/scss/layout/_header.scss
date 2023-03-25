@@ -1,0 +1,115 @@
+/*Header*/
+.header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 22px 0;
+	color: #675D57;
+	transition: .3s;
+	z-index: 10;
+	background: #FFFFFF;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	&__wrap{
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		width: 226px;
+		img {
+			width: auto;
+			max-height: 30px;
+			transition: .3s;
+		}
+	}
+
+	&__nav {
+		flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		&--ul {
+			display: flex;
+			align-items: center;
+			gap: 40px;
+			&>li {
+				&:first-child>a>span {
+					&:before {
+						content: '';
+						position: absolute;
+						left: -1px !important;
+						background: var(--color06);
+						top: 14px !important;
+						width: 2px !important;
+						height: calc(100% - 28px) !important;
+					}
+				}
+
+				>a {
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 22px;
+					color: var(--primary);
+				}
+
+				>a:after span {
+					content: '';
+					position: absolute;
+					right: -1px !important;
+					background: var(--color06);
+					top: 14px !important;
+					width: 2px !important;
+					height: calc(100% - 28px) !important;
+				}
+
+				// &.menu-item-has-children {
+				// 	>a:before {
+				// 		content: '';
+				// 		position: absolute;
+				// 		bottom: 14px;
+				// 		left: calc(50% - 4px);
+				// 		width: 12px !important;
+				// 		height: 8px;
+				// 		background-image: url(../images/icon-arrow-down.svg);
+				// 		background-repeat: no-repeat;
+				// 		background-size: contain;
+				// 		pointer-events: none;
+				// 	}
+				// }
+
+			}
+		}
+	}
+	&__right{
+		&--login{
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 1.2;
+			color: #001E49;
+		}
+	}
+	&__order{
+		padding: 8px 10px;
+	}
+
+	.mburger .icon-bar {
+		background-color: #736963;
+	}
+
+	&.is-sticky {
+		position: fixed;
+		background: #fff;
+		color: #000;
+		box-shadow: 0 0 10px #ccc;
+	}
+
+	@media (max-width: 1399px) {}
+
+	@media (max-width: 1199px) {}
+
+	@media (max-width: 991px) {}
+
+	@media (max-width: 767px) {}
+
+	@media (max-width: 575px) {}
+
+}

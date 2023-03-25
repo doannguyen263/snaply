@@ -1,0 +1,46 @@
+.home-banner{
+	position: relative;
+	padding: 284px 0 362px;
+	&__title{
+		margin-bottom: 24px;
+		font-weight: 700;
+		font-size: 106px;
+		line-height: 1.23;
+		color: #123573;
+		strong{
+			display: inline-block;
+			color: #fff;
+		}
+	}
+	&__meta{
+		width: 48%;
+	}
+	&__sub{
+		margin-bottom: 40px;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 1.5;
+		color: #001E49;
+	}
+	&__buttons{
+		gap: 24px;
+	}
+	&__get{
+		padding: 12px 13px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.2;
+		color: #123573;
+		background: #EFF4FD;
+		border-radius: 8px;
+	}
+	&__bg{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 56%;
+		height: 120%;
+		z-index: -1;
+		text-align: right;
+	}
+}

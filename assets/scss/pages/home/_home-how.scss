@@ -1,0 +1,38 @@
+.home-how{
+	padding: 44px 0;
+	.c-header{
+		margin-bottom: 72px;
+	}
+	&__box{
+		margin-bottom: 70px;
+	}
+	.box-item{
+		margin-bottom: 30px;
+		padding: 0 28px;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 1.22;
+		color: #001E49;
+		&__thumb{
+			margin: 24px;
+			font-size: 64px;
+			color: #071D46;
+		}
+		&__title{
+			margin-bottom: 16px;
+			font-weight: 800;
+			font-size: 32px;
+			line-height: 1.25;
+			color: #123573;
+		}
+	}
+	&__buttons{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 32px;
+		.btn{
+			min-width: 256px;
+		}
+	}
+}
