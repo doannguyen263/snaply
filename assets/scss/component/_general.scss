@@ -1,11 +1,12 @@
-.c-header{
-	&__title{
+.c-header {
+	&__title {
 		font-weight: 800;
 		font-size: 50px;
 		line-height: 1.24;
 		color: #123573;
 	}
-	&__sub{
+
+	&__sub {
 		margin-bottom: 12px;
 		font-weight: 800;
 		font-size: 22px;
@@ -13,10 +14,12 @@
 		letter-spacing: 0.095em;
 		color: #123573;
 		opacity: 0.5;
-		&.-has-icon{
+
+		&.-has-icon {
 			display: flex;
 			align-items: center;
-			&::before{
+
+			&::before {
 				content: '';
 				display: inline-block;
 				width: 25px;
@@ -28,10 +31,36 @@
 			}
 		}
 	}
+
+	@media (max-width: 1399px) {}
+
+	@media (max-width: 1199px) {
+		&__sub {
+			font-size: 20px;
+		}
+
+		&__title {
+			font-size: 44px;
+		}
+	}
+
+	@media (max-width: 991px) {}
+
+	@media (max-width: 767px) {
+		&__sub {
+			font-size: 18px;
+		}
+
+		&__title {
+			font-size: 36px;
+		}
+	}
+
+	@media (max-width: 575px) {}
 }
 
 
-.icon-drone{
+.icon-drone {
 	display: inline-block;
 	width: 24px;
 	height: 24px;

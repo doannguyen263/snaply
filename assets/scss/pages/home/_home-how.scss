@@ -1,24 +1,29 @@
-.home-how{
+.home-how {
 	padding: 44px 0;
-	.c-header{
+
+	.c-header {
 		margin-bottom: 72px;
 	}
-	&__box{
+
+	&__box {
 		margin-bottom: 70px;
 	}
-	.box-item{
+
+	.box-item {
 		margin-bottom: 30px;
 		padding: 0 28px;
 		font-weight: 400;
 		font-size: 22px;
 		line-height: 1.22;
 		color: #001E49;
-		&__thumb{
-			margin: 24px;
+
+		&__thumb {
+			margin-bottom: 24px;
 			font-size: 64px;
 			color: #071D46;
 		}
-		&__title{
+
+		&__title {
 			margin-bottom: 16px;
 			font-weight: 800;
 			font-size: 32px;
@@ -26,13 +31,75 @@
 			color: #123573;
 		}
 	}
-	&__buttons{
+
+	&__buttons {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 32px;
-		.btn{
+
+		.btn {
 			min-width: 256px;
+		}
+	}
+
+	@media (max-width: 1399px) {}
+
+	@media (max-width: 1199px) {
+		.box-item {
+			padding: 0 16px;
+			font-size: 18px;
+
+			&__title {
+				font-size: 30px;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		&__box {
+			margin-bottom: 40px;
+		}
+
+		.box-item {
+			padding: 0;
+			font-size: 16px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__list {
+			padding: 30px;
+		}
+
+		.col--left {
+			width: 100%;
+		}
+
+		.box-item {
+			&__thumb {
+				margin-bottom: 16px;
+				font-size: 58px;
+			}
+
+			&__title {
+				font-size: 26px;
+			}
+		}
+
+		&__buttons {
+			gap: 16px;
+		}
+
+	}
+
+	@media (max-width: 575px) {
+		&__buttons {
+			flex-wrap: wrap;
+
+			.btn {
+				min-width: 50%;
+			}
 		}
 	}
 }

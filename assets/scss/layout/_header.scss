@@ -9,12 +9,15 @@
 	z-index: 10;
 	background: #FFFFFF;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	&__wrap{
+
+	&__wrap {
 		display: flex;
 		align-items: center;
 	}
+
 	&__logo {
 		width: 226px;
+
 		img {
 			width: auto;
 			max-height: 30px;
@@ -24,70 +27,59 @@
 
 	&__nav {
 		flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
 		&--ul {
 			display: flex;
 			align-items: center;
 			gap: 40px;
-			&>li {
-				&:first-child>a>span {
-					&:before {
-						content: '';
-						position: absolute;
-						left: -1px !important;
-						background: var(--color06);
-						top: 14px !important;
-						width: 2px !important;
-						height: calc(100% - 28px) !important;
-					}
-				}
 
+			&>li {
 				>a {
+					position: relative;
 					font-weight: 700;
 					font-size: 18px;
 					line-height: 22px;
 					color: var(--primary);
-				}
 
-				>a:after span {
-					content: '';
-					position: absolute;
-					right: -1px !important;
-					background: var(--color06);
-					top: 14px !important;
-					width: 2px !important;
-					height: calc(100% - 28px) !important;
-				}
+					&::before {
+						content: '';
+						position: absolute;
+						bottom: -29px;
+						left: 0;
+						right: 0;
+						width: 10%;
+						height: 2px;
+						margin: 0 auto;
+						background: var(--primary);
+						opacity: 0;
+						transition: .3s;
+					}
 
-				// &.menu-item-has-children {
-				// 	>a:before {
-				// 		content: '';
-				// 		position: absolute;
-				// 		bottom: 14px;
-				// 		left: calc(50% - 4px);
-				// 		width: 12px !important;
-				// 		height: 8px;
-				// 		background-image: url(../images/icon-arrow-down.svg);
-				// 		background-repeat: no-repeat;
-				// 		background-size: contain;
-				// 		pointer-events: none;
-				// 	}
-				// }
+					&:hover {
+						&::before {
+							width: 100%;
+							opacity: 1;
+						}
+					}
+				}
 
 			}
 		}
 	}
-	&__right{
-		&--login{
+
+	&__right {
+		&--login {
 			font-weight: 700;
 			font-size: 18px;
 			line-height: 1.2;
 			color: #001E49;
 		}
 	}
-	&__order{
+
+	&__order {
 		padding: 8px 10px;
 	}
 
@@ -101,15 +93,5 @@
 		color: #000;
 		box-shadow: 0 0 10px #ccc;
 	}
-
-	@media (max-width: 1399px) {}
-
-	@media (max-width: 1199px) {}
-
-	@media (max-width: 991px) {}
-
-	@media (max-width: 767px) {}
-
-	@media (max-width: 575px) {}
 
 }

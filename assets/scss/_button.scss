@@ -1,9 +1,9 @@
-
 .btn {
   position: relative;
   font-size: 16px;
   line-height: normal;
   transition: .3s;
+
   &-primary {
     min-width: 150px;
     padding: 12px 32px;
@@ -17,16 +17,17 @@
     &:hover {
       box-shadow: 0 0 10px #ccc;
     }
-
   }
-  &-outline-primary{
+
+  &-outline-primary {
     padding: 12px 32px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.2;
     color: #123573;
   }
-  &-get{
+
+  &-get {
     padding: 12px 25px;
     font-weight: 700;
     font-size: 16px;
@@ -34,20 +35,26 @@
     color: #123573;
     background: #EFF4FD;
     border-radius: 8px;
-    &:hover{
+    &:hover {
       background: #003677;
       color: #fff;
     }
   }
 
+  @media (max-width: 1399px) {
+    &-primary {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
 
-  @media (max-width: 1399px) {}
-
-  @media (max-width: 1199px) {}
-
-  @media (max-width: 991px) {}
-
-  @media (max-width: 767px) {}
-
-  @media (max-width: 575px) {}
+    &-outline-primary {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+  @media (max-width: 767px) {
+    &-get {
+      padding: 12px 16px;
+    }
+  }
 }
