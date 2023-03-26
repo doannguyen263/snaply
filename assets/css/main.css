@@ -540,7 +540,8 @@ a {
   .footer__address {
     font-weight: 600;
     font-size: 16px;
-    line-height: 1.75; }
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.8); }
     .footer__address a {
       color: rgba(255, 255, 255, 0.8); }
       .footer__address a:hover {
@@ -575,6 +576,13 @@ a {
   @media (max-width: 1199px) {
     .footer {
       padding: 80px 0 35px; } }
+  @media (max-width: 575px) {
+    .footer {
+      padding: 40px 0 20px; }
+      .footer__list a {
+        font-size: 12px; }
+      .footer__address {
+        font-size: 14px; } }
 
 .copyright {
   padding: 46px 0;
@@ -608,6 +616,12 @@ a {
         justify-content: center; }
         .copyright__list a {
           font-size: 14px; } }
+  @media (max-width: 575px) {
+    .copyright {
+      padding: 16px 0;
+      font-size: 12px; }
+      .copyright__list a {
+        font-size: 12px; } }
 
 /*Menu custom*/
 .modal-open {
@@ -1210,7 +1224,7 @@ a {
   display: flex;
   flex-direction: column; }
 
-.slick-item__wrap + .slick-item__wrap {
+.slick-item__wrap:not(.slick-slide) + .slick-item__wrap {
   display: none; }
 
 .slick-style {
@@ -1475,18 +1489,33 @@ a {
       width: 100%; }
     .home-products__list {
       padding-top: 20px;
-      gap: 2px; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .home-products__list .icon-drone {
         width: 20px;
         height: 20px; }
       .home-products__list .list-item {
-        padding: 10px 2px; }
+        padding: 10px 6px;
+        width: calc( 33.3333333% - 6px);
+        flex: 0 0 auto; }
+        .home-products__list .list-item:not(last-child) {
+          margin-bottom: 0; }
+        .home-products__list .list-item:nth-child(4), .home-products__list .list-item:nth-child(5) {
+          width: calc( 50% - 6px); }
         .home-products__list .list-item__icon {
           width: 40px;
           height: 40px;
           font-size: 20px; }
         .home-products__list .list-item__title {
-          font-size: 12px; }
+          font-size: 14px; }
+          .home-products__list .list-item__title .list-item__readmore {
+            position: relative;
+            display: block;
+            background: #003677;
+            color: #fff;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-size: 12px; }
         .home-products__list .list-item__readmore {
           font-size: 14px; } }
 

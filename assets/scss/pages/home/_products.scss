@@ -213,16 +213,23 @@
 
 		&__list {
 			padding-top: 20px;
-			gap: 2px;
-
+			flex-wrap: wrap;
+			justify-content: center;
 			.icon-drone {
 				width: 20px;
 				height: 20px;
 			}
 
 			.list-item {
-				padding: 10px 2px;
-
+				padding: 10px 6px;
+			    width: calc( 33.3333333% - 6px);
+			    flex: 0 0 auto;
+			    &:not(last-child){
+			    	margin-bottom: 0;
+			    }
+			    &:nth-child(4),&:nth-child(5){
+			    	width: calc( 50% - 6px);
+			    }
 				&__icon {
 					width: 40px;
 					height: 40px;
@@ -230,7 +237,16 @@
 				}
 
 				&__title {
-					font-size: 12px;
+					font-size: 14px;
+					.list-item__readmore {
+						position: relative;
+					    display: block;
+					    background: #003677;
+					    color: #fff;
+					    padding: 3px 7px;
+					    border-radius: 4px;
+					    font-size: 12px;
+					}
 				}
 
 				&__readmore {

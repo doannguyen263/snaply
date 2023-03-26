@@ -38,10 +38,9 @@
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 1.75;
-
+		color: rgba(255, 255, 255, .8);
 		a {
 			color: rgba(255, 255, 255, .8);
-
 			&:hover {
 				color: rgba(255, 255, 255, 1);
 			}
@@ -100,7 +99,15 @@
 
 	@media (max-width: 767px) {}
 
-	@media (max-width: 575px) {}
+	@media (max-width: 575px) {
+		padding: 40px 0 20px;
+		&__list a {
+		    font-size: 12px;
+		}
+		&__address {
+		    font-size: 14px;
+		}
+	}
 }
 
 .copyright {
@@ -153,5 +160,11 @@
 		}
 	}
 
-	@media (max-width: 575px) {}
+	@media (max-width: 575px) {
+		padding: 16px 0;
+		font-size: 12px;
+		&__list a {
+		    font-size: 12px;
+		}
+	}
 }

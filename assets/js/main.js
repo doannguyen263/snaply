@@ -37,7 +37,7 @@ jQuery(function ($) {
     arrows: false,
     dots: true,
     touchMove: false,
-    autoplay: true,
+    // autoplay: true,
     responsive: [
       {
         breakpoint: 575,
