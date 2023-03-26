@@ -18,6 +18,10 @@
 	&__logo {
 		width: 226px;
 
+		a {
+			display: block;
+		}
+
 		img {
 			width: auto;
 			max-height: 30px;
@@ -34,6 +38,7 @@
 		&--ul {
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			gap: 40px;
 
 			&>li {
@@ -47,7 +52,7 @@
 					&::before {
 						content: '';
 						position: absolute;
-						bottom: -29px;
+						bottom: -30px;
 						left: 0;
 						right: 0;
 						width: 10%;
@@ -58,7 +63,8 @@
 						transition: .3s;
 					}
 
-					&:hover {
+					&:hover,
+					&.active {
 						&::before {
 							width: 100%;
 							opacity: 1;
@@ -93,5 +99,11 @@
 		color: #000;
 		box-shadow: 0 0 10px #ccc;
 	}
+	@media (max-width: 1199px) {
+		padding: 16px 0;
 
+		&__nav--ul>li>a::before {
+			bottom: -24px;
+		}
+	}
 }

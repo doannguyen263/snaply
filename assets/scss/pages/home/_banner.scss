@@ -127,5 +127,9 @@
 			width: 100%;
 			text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px 0px 0 white, 1px 0px 0 white, -1px 0px 0 white, -1px 0px 0 white, 0px 1px 0 white, 0px -1px 0 white, 0px -1px 0 white, 0px 1px 0 white, 0px 0px 0 white, 0px 0px 0 white, 0px 0px 0 white, 0px 0px 0 white, 0 0 0 white;
 		}
+		&__get {
+			padding: 8px 12px;
+		    font-size: 14px;
+		}
 	}
 }
