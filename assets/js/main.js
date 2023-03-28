@@ -11,7 +11,7 @@ jQuery(function ($) {
 
   // Hover add class
   // =========================
-  $(".js-item-hover").on("hover click",function () {
+  $(".js-item-hover").on("mouseenter click",function () {
     let data = $(this).attr("data-id");
     $(this).addClass("active").siblings(".js-item-hover").removeClass("active");
 
