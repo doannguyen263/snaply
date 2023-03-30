@@ -9,9 +9,39 @@ jQuery(function ($) {
 
   wow.init();
 
+  // Your fancybox
+  Fancybox.bind("[data-fancybox-plyr]", {
+    on: {
+      reveal: (fancybox, slide) => {
+        let $el;
+
+        if (slide.type === "html5video") {
+          $el = slide.$content.querySelector("video");
+        } else if (slide.type === "video") {
+          $el = document.createElement("div");
+          $el.classList.add("plyr__video-embed");
+
+          $el.appendChild(slide.$iframe);
+
+          slide.$content.appendChild($el);
+        }
+      },
+      "Carousel.unselectSlide": (fancybox, carousel, slide) => {
+        if (slide.player) {
+          slide.player.pause();
+        }
+      },
+      "Carousel.selectSlide": (fancybox, carousel, slide) => {
+        if (slide.player) {
+          slide.player.play();
+        }
+      },
+    },
+  });
+
   // Hover add class
   // =========================
-  $(".js-item-hover").on("mouseenter click",function () {
+  $(".js-item-hover").on("mouseenter click", function () {
     let data = $(this).attr("data-id");
     $(this).addClass("active").siblings(".js-item-hover").removeClass("active");
 
