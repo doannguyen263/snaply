@@ -18,9 +18,23 @@
 		color: #001E49;
 
 		&__thumb {
+			position: relative;
 			margin-bottom: 24px;
 			font-size: 64px;
 			color: #071D46;
+		}
+
+		&__number {
+			font-weight: 800;
+			font-size: 148px;
+			line-height: 1;
+			color: #D0D7E3;
+			opacity: 0.5;
+			position: absolute;
+			top: -65%;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -1;
 		}
 
 		&__title {
@@ -80,6 +94,10 @@
 			&__thumb {
 				margin-bottom: 16px;
 				font-size: 58px;
+			}
+
+			&__number {
+				font-size: 128px;
 			}
 
 			&__title {

@@ -1474,6 +1474,9 @@ a {
   line-height: 1.22;
   text-align: center;
   color: #FFFFFF; }
+  @media (max-width: 575px) {
+    .home-walkthrough {
+      font-size: 14px; } }
 
 .home-products {
   padding-bottom: 40px; }
@@ -1750,9 +1753,21 @@ a {
     line-height: 1.22;
     color: #001E49; }
     .home-how .box-item__thumb {
+      position: relative;
       margin-bottom: 24px;
       font-size: 64px;
       color: #071D46; }
+    .home-how .box-item__number {
+      font-weight: 800;
+      font-size: 148px;
+      line-height: 1;
+      color: #D0D7E3;
+      opacity: 0.5;
+      position: absolute;
+      top: -65%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1; }
     .home-how .box-item__title {
       margin-bottom: 16px;
       font-weight: 800;
@@ -1786,6 +1801,8 @@ a {
     .home-how .box-item__thumb {
       margin-bottom: 16px;
       font-size: 58px; }
+    .home-how .box-item__number {
+      font-size: 128px; }
     .home-how .box-item__title {
       font-size: 26px; }
     .home-how__buttons {

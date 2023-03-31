@@ -151,4 +151,8 @@
 	line-height: 1.22;
 	text-align: center;
 	color: #FFFFFF;
+
+	@media (max-width: 575px) {
+		font-size: 14px;
+	}
 }
