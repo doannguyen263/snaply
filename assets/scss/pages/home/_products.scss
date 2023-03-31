@@ -23,7 +23,6 @@
 			position: relative;
 			display: flex;
 			align-items: center;
-			gap: 22px;
 			padding: 24px;
 			background: #FFFFFF;
 			border: 1px solid #E6EBFC;
@@ -47,12 +46,14 @@
 
 			&__info {
 				flex-grow: 1;
+				padding-right: 10px;
 			}
 
 			&__icon {
 				flex: 0 0 auto;
 				width: 50px;
 				height: 50px;
+				margin-right: 22px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -80,11 +81,15 @@
 			}
 
 			&__readmore {
+				flex: 0 0 auto;
 				display: block;
-				font-size: 16px;
 				opacity: 0;
 				transform: translateX(5px);
 				transition: .3s;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 1.25;
+				color: #123573;
 			}
 		}
 	}
@@ -120,6 +125,7 @@
 			width: 100%;
 			display: none;
 			transition: opacity .15s linear;
+
 			&:not(.show) {
 				opacity: 0;
 			}
@@ -183,21 +189,20 @@
 
 				&__title {
 					display: block;
-					.list-item__readmore {
-						position: relative;
-					    display: block;
-					    background: #003677;
-					    color: #fff;
-					    padding: 3px 7px;
-					    border-radius: 4px;
-					    font-size: 12px;
-					}
+					font-size: 16px;
 				}
 
 				&__readmore {
 					margin-top: 6px;
 					opacity: 1;
 					transform: translateX(0);
+					position: relative;
+					display: block;
+					background: #003677;
+					color: #fff;
+					padding: 3px 7px;
+					border-radius: 4px;
+					font-size: 12px;
 				}
 			}
 		}
@@ -205,9 +210,10 @@
 	}
 
 	@media (max-width: 767px) {
-		&__list{
+		&__list {
 			flex-wrap: wrap;
 			justify-content: center;
+
 			.list-item {
 				padding: 16px 6px;
 
@@ -215,14 +221,17 @@
 					font-size: 16px;
 				}
 
-			    width: calc( 33.3333333% - 6px);
-			    flex: 0 0 auto;
-			    &:not(last-child){
-			    	margin-bottom: 0;
-			    }
-			    &:nth-child(4),&:nth-child(5){
-			    	width: calc( 50% - 6px);
-			    }
+				width: calc(33.3333333% - 6px);
+				flex: 0 0 auto;
+
+				&:not(last-child) {
+					margin-bottom: 0;
+				}
+
+				&:nth-child(4),
+				&:nth-child(5) {
+					width: calc(50% - 6px);
+				}
 			}
 		}
 
@@ -230,6 +239,7 @@
 			padding: 10px 30px;
 			font-size: 16px;
 		}
+
 		&__content {
 			min-height: 420px;
 		}
@@ -243,6 +253,7 @@
 
 		&__list {
 			padding-top: 20px;
+
 			.icon-drone {
 				width: 20px;
 				height: 20px;
@@ -250,6 +261,7 @@
 
 			.list-item {
 				padding: 10px 6px;
+
 				&__icon {
 					width: 40px;
 					height: 40px;

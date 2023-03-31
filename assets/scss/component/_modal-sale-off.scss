@@ -1,0 +1,72 @@
+.modal-saleoff {
+	.modal-dialog {
+		max-width: 435px;
+	}
+
+	&__body {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.22;
+		color: #001E49;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.25;
+		color: #003677;
+	}
+
+	&__code {
+		margin-bottom: 10px;
+		padding: 15px;
+		background: #EFF4FD;
+		border: 1px dashed #001E49;
+		border-radius: 4px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.25;
+		color: #003677;
+	}
+
+	&__nothanks {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 1.5;
+		color: #001E49;
+	}
+
+	.btn-close {
+		position: fixed;
+		top: 32px;
+		right: 64px;
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		opacity: 1;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 4px;
+		color: #fff;
+		font-size: 16px;
+		z-index: 111111;
+		cursor: pointer;
+	}
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	background: rgba(0, 8, 19, 1);
+
+	&.show {
+		opacity: .85;
+	}
+}

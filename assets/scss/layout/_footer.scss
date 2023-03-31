@@ -39,8 +39,10 @@
 		font-size: 16px;
 		line-height: 1.75;
 		color: rgba(255, 255, 255, .8);
+
 		a {
 			color: rgba(255, 255, 255, .8);
+
 			&:hover {
 				color: rgba(255, 255, 255, 1);
 			}
@@ -83,9 +85,11 @@
 			transition: .3s;
 			color: #FFFFFF;
 			font-size: 35px;
+			border: 2px solid rgba(255, 255, 255, .25);
+			border-radius: 50%;
 
 			&:hover {
-				transform: translateY(-4px);
+				background: rgba(115, 149, 208, .25);
 			}
 		}
 	}
@@ -101,11 +105,13 @@
 
 	@media (max-width: 575px) {
 		padding: 40px 0 20px;
+
 		&__list a {
-		    font-size: 12px;
+			font-size: 12px;
 		}
+
 		&__address {
-		    font-size: 14px;
+			font-size: 14px;
 		}
 	}
 }
@@ -138,7 +144,7 @@
 	@media (max-width: 1199px) {
 		padding: 24px 0;
 	}
-	
+
 	@media (max-width: 767px) {
 
 		font-size: 14px;
@@ -161,8 +167,9 @@
 	@media (max-width: 575px) {
 		padding: 16px 0;
 		font-size: 12px;
+
 		&__list a {
-		    font-size: 12px;
+			font-size: 12px;
 		}
 	}
 }

@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/fonts/icomoon.eot?qqbxbl');
-  src:  url('../fonts/icomoon/fonts/icomoon.eot?qqbxbl#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon/fonts/icomoon.eot?qqbxbl');
+  src: url('../fonts/icomoon/fonts/icomoon.eot?qqbxbl#iefix') format('embedded-opentype'),
     url('../fonts/icomoon/fonts/icomoon.ttf?qqbxbl') format('truetype'),
     url('../fonts/icomoon/fonts/icomoon.woff?qqbxbl') format('woff'),
     url('../fonts/icomoon/fonts/icomoon.svg?qqbxbl#icomoon') format('svg');
@@ -10,7 +10,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -25,118 +26,161 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "\e902";
+  color: #003677;
+}
+
+.icon-pin:before {
+  content: "\e903";
+  color: #003677;
+}
+
+.icon-remove:before {
+  content: "\e901";
+}
+
 .icon-a-chart:before {
   content: "\e915";
 }
+
 .icon-box:before {
   content: "\e916";
 }
+
 .icon-camera:before {
   content: "\e917";
 }
+
 .icon-check:before {
   content: "\e918";
 }
+
 .icon-clock:before {
   content: "\e919";
 }
+
 .icon-cloud-forecast:before {
   content: "\e91a";
 }
+
 .icon-edit-brightness:before {
   content: "\e91b";
 }
+
 .icon-facebook:before {
   content: "\e91c";
 }
+
 .icon-house-search-engine:before {
   content: "\e91d";
 }
+
 .icon-linkedin:before {
   content: "\e91e";
 }
+
 .icon-progress:before {
   content: "\e91f";
 }
+
 .icon-twitter:before {
   content: "\e920";
 }
+
 .icon-webpage:before {
   content: "\e921";
 }
+
 .icon-floor-plans:before {
   content: "\e900";
 }
+
 .icon-drone .path1:before {
   content: "\e905";
   color: rgb(255, 255, 255);
 }
+
 .icon-drone .path2:before {
   content: "\e906";
   margin-left: -0.9599609375em;
   color: rgb(18, 53, 115);
 }
+
 .icon-drone .path3:before {
   content: "\e907";
   margin-left: -0.9599609375em;
   color: rgb(255, 255, 255);
 }
+
 .icon-drone .path4:before {
   content: "\e908";
   margin-left: -0.9599609375em;
   color: rgb(18, 53, 115);
 }
+
 .icon-drone .path5:before {
   content: "\e909";
   margin-left: -0.9599609375em;
   color: rgb(255, 255, 255);
 }
+
 .icon-drone .path6:before {
   content: "\e90a";
   margin-left: -0.9599609375em;
   color: rgb(18, 53, 115);
 }
+
 .icon-drone .path7:before {
   content: "\e90b";
   margin-left: -0.9599609375em;
   color: rgb(255, 255, 255);
 }
+
 .icon-drone .path8:before {
   content: "\e90c";
   margin-left: -0.9599609375em;
   color: rgb(18, 53, 115);
 }
+
 .icon-drone .path9:before {
   content: "\e90d";
   margin-left: -0.9599609375em;
   color: rgb(7, 29, 70);
 }
+
 .icon-drone .path10:before {
   content: "\e90e";
   margin-left: -0.9599609375em;
   color: rgb(7, 29, 70);
 }
+
 .icon-drone .path11:before {
   content: "\e90f";
   margin-left: -0.9599609375em;
   color: rgb(7, 29, 70);
 }
+
 .icon-drone .path12:before {
   content: "\e910";
   margin-left: -0.9599609375em;
   color: rgb(7, 29, 70);
 }
+
 .icon-drone .path13:before {
   content: "\e911";
   margin-left: -0.9599609375em;
   color: rgb(7, 29, 70);
 }
+
 .icon-rotate-camera:before {
   content: "\e912";
 }
+
 .icon-virtual-environment:before {
   content: "\e913";
 }
+
 .icon-video-player:before {
   content: "\e914";
 }

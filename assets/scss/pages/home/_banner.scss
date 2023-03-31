@@ -43,6 +43,13 @@
 		color: #123573;
 		background: #EFF4FD;
 		border-radius: 8px;
+		transition: .3s;
+
+		&:hover {
+			color: #fff;
+			background-color: var(--bs-primary-hover);
+			border-color: var(--bs-primary-hover);
+		}
 	}
 
 	&__bg {
@@ -127,9 +134,21 @@
 			width: 100%;
 			text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px 0px 0 white, 1px 0px 0 white, -1px 0px 0 white, -1px 0px 0 white, 0px 1px 0 white, 0px -1px 0 white, 0px -1px 0 white, 0px 1px 0 white, 0px 0px 0 white, 0px 0px 0 white, 0px 0px 0 white, 0px 0px 0 white, 0 0 0 white;
 		}
+
 		&__get {
 			padding: 8px 12px;
-		    font-size: 14px;
+			font-size: 14px;
 		}
 	}
+}
+
+.home-walkthrough {
+	padding: 16px 0 14px;
+	background: #003677;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.22;
+	text-align: center;
+	color: #FFFFFF;
 }
