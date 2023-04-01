@@ -2117,6 +2117,8 @@ a {
     min-width: 200px; }
   .product-item .btn-secondary {
     min-width: 256px; }
+  .product-item .ratio-youtube {
+    --bs-aspect-ratio: 57%; }
   @media (max-width: 1399px) {
     .product-item__title {
       font-size: 44px; } }
@@ -2274,5 +2276,64 @@ a {
     padding: 40px 0 80px; }
   .page-contact__title {
     font-size: 42px; } }
+
+.page-content {
+  padding: 64px 0 17%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #001E49; }
+  .page-content h1 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 106px;
+    line-height: 1.23;
+    color: #123573; }
+  .page-content__excerpt {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #001E49; }
+  .page-content h2 {
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #123573; }
+  .page-content ul {
+    padding-left: 16px; }
+    .page-content ul li {
+      margin-bottom: 16px; }
+  @media only screen and (max-width: 1399px) {
+    .page-content h1 {
+      font-size: 90px; }
+    .page-content h2 {
+      font-size: 44px; } }
+  @media only screen and (max-width: 1199px) {
+    .page-content h1 {
+      font-size: 80px; }
+    .page-content h2 {
+      font-size: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .page-content h1 {
+      font-size: 70px; }
+    .page-content h2 {
+      font-size: 32px; } }
+  @media only screen and (max-width: 767px) {
+    .page-content h1 {
+      font-size: 60px; }
+    .page-content h2 {
+      font-size: 24px; }
+    .page-content__excerpt {
+      margin-bottom: 32px;
+      font-size: 20px; } }
+  @media only screen and (max-width: 575px) {
+    .page-content h1 {
+      font-size: 42px; }
+    .page-content h2 {
+      font-size: 24px; }
+    .page-content__excerpt {
+      font-size: 18px; } }
 
 /*# sourceMappingURL=main.css.map */

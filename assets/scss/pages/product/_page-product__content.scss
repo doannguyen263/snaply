@@ -1,5 +1,6 @@
 .page-product__content {
 	padding-bottom: 220px;
+
 	@media (max-width: 1199px) {
 		padding-bottom: 160px;
 	}
@@ -74,6 +75,10 @@
 
 	.btn-secondary {
 		min-width: 256px;
+	}
+
+	.ratio-youtube {
+		--bs-aspect-ratio: 57%;
 	}
 
 	@media (max-width: 1399px) {
