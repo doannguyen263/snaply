@@ -1760,11 +1760,11 @@ a {
     .home-how .box-item__number {
       font-weight: 800;
       font-size: 148px;
-      line-height: 1;
+      line-height: 0;
       color: #D0D7E3;
       opacity: 0.5;
       position: absolute;
-      top: -65%;
+      top: 32%;
       left: 50%;
       transform: translateX(-50%);
       z-index: -1; }
@@ -1798,13 +1798,18 @@ a {
       padding: 30px; }
     .home-how .col--left {
       width: 100%; }
-    .home-how .box-item__thumb {
-      margin-bottom: 16px;
-      font-size: 58px; }
-    .home-how .box-item__number {
-      font-size: 128px; }
-    .home-how .box-item__title {
-      font-size: 26px; }
+    .home-how__box {
+      margin-bottom: 10px; }
+    .home-how .box-item {
+      margin-bottom: 60px; }
+      .home-how .box-item__thumb {
+        margin-bottom: 8px;
+        font-size: 58px; }
+      .home-how .box-item__number {
+        font-size: 128px; }
+      .home-how .box-item__title {
+        margin-bottom: 8px;
+        font-size: 26px; }
     .home-how__buttons {
       gap: 16px; } }
   @media (max-width: 575px) {
